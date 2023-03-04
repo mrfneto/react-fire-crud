@@ -5,4 +5,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --primary: #1da756;
+  --dark: #0d120e;
+  --gray-100: #232826;
+  --gray-200: #3c413f;
+  --text: #f9fbfc;
+}
+
+* {
+  padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+h1,h2,p {
+  margin: 0;
+  padding: 0;
+}
+
+a,button {
+  text-decoration: none;
+  color: inherit;
+  outline: unset;
+  cursor: pointer;
 }
