@@ -26,6 +26,12 @@ body {
   color: var(--text);
   min-height: 100vh;
   font-size: 1.6rem;
+
+  width: 90%;
+  max-width: 76.8rem;
+  margin: 0 auto;
+
+  padding: 0 1.5rem;
 }
 
 h1,h2,p {
@@ -33,9 +39,9 @@ h1,h2,p {
   padding: 0;
 }
 
-a,button {
+a, button {
   text-decoration: none;
   color: inherit;
-  outline: unset;
+  outline: none;
   cursor: pointer;
 }
