@@ -24,6 +24,10 @@ export const Home = () => {
     console.log('Deleted')
   }
 
+  const convertDate = date => {
+    return date.toDate().toLocaleDateString('pt-br')
+  }
+
   const searchResult =
     search.length > 0
       ? projects.filter(p =>
@@ -50,6 +54,7 @@ export const Home = () => {
             <thead>
               <tr>
                 <th>Projects</th>
+                <th>Date</th>
                 <th></th>
               </tr>
             </thead>
@@ -61,6 +66,7 @@ export const Home = () => {
                         <h2>{project.title}</h2>
                         <p>{project.description.substring(0, 75) + '...'}</p>
                       </td>
+                      <td>{convertDate(project.createdAt)}</td>
                       <td className="table__actions">
                         <Link to={`${project.id}/update`}>Edit</Link>
                         <a type="button" onClick={() => remove(project.id)}>
@@ -75,6 +81,7 @@ export const Home = () => {
                         <h2>{project.title}</h2>
                         <p>{project.description.substring(0, 75) + '...'}</p>
                       </td>
+                      <td>{convertDate(project.createdAt)}</td>
                       <td className="table__actions">
                         <Link to={`${project.id}/update`}>Edit</Link>
                         <a type="button" onClick={() => remove(project.id)}>
