@@ -57,7 +57,7 @@ export const Form = () => {
         />
         <textarea
           name="description"
-          rows="5"
+          rows="10"
           placeholder="Description"
           defaultValue={document.description}
         ></textarea>
