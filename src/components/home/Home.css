@@ -1,0 +1,108 @@
+.home {
+  padding-top: 5rem;
+}
+
+.home__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.home__header input {
+  background-color: var(--gray-100);
+  color: inherit;
+
+  outline: none;
+  border: 1px solid var(--gray-200);
+  border-radius: .5rem;
+
+  padding: 1rem 1.5rem;
+}
+
+.home__header input:focus {
+  border: 1px solid var(--primary);
+}
+
+.home__header a {
+  background-color: var(--primary);
+  color: var(--text);
+
+  outline: none;
+  border: 1px solid var(--gray-200);
+  border-radius: .5rem;
+
+  padding: 1rem 1.5rem;
+
+  transition: all 250ms;
+}
+
+.home__header a:hover {
+opacity: .85;
+}
+
+.home__content {
+  padding-top: 2.5rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2.4rem;
+}
+
+.tab__item {
+  overflow: hidden;
+  border: 1px solid transparent;
+  padding: 1rem;
+  background-color: transparent;
+  transition: all 259ms;
+
+  width: 8rem;
+}
+
+.tab__item:hover {
+  border-bottom: 1px solid var(--primary);
+}
+
+.tab__item.active {
+  border-bottom: 1px solid var(--primary);
+}
+
+.card {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse:separate; 
+  border-spacing: 0 .5rem;
+  
+}
+
+
+th {
+  text-align: left;
+  padding: 1rem;
+}
+
+tbody tr {
+  background-color: var(--gray-100);
+  padding: .5rem 0;
+}
+
+td {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+td:first-child {
+  border-radius: .5rem 0 0 .5rem;
+}
+td:last-child {
+  border-radius: 0 .5rem .5rem 0;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
